@@ -1,0 +1,99 @@
+@import url("./common/fonts.css");
+@import url("./common/colors.css");
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .contain-info {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contain-info {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}
+
+#body-presentacion {
+  padding-top: 60px;
+  width: 100%;
+  height: 100%;
+}
+
+#container-presentacion {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.foto-info Img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #957f51;
+}
+
+.txt-info {
+  font-family: txt-info, txt-info; /*Si no carga bien la fuente importada aplica la sans-serif*/
+  color: var(--txt-color);
+  text-shadow: 0 0 10px #212529;
+  text-align: justify;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.contain-info {
+  position: absolute;
+  padding-left: 120px;
+  padding-right: 120px;
+  width: 100%;
+  height: calc(100vh - 60px);
+  align-items: center;
+  /*
+  top: 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.contain-info .row {
+  position: relative;
+  height: 100%;
+}
+
+.seguinos-info {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #212529;
+  border-radius: 50px;
+}
+
+.seguinos-info .row {
+  width: 100%;
+}
+
+.seguinos-info Img {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(0px 0px 5px #957f51);
+}

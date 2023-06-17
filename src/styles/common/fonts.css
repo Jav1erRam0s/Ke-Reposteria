@@ -1,0 +1,43 @@
+/* Fuente de: https://fonts.google.com/ */
+
+/* Navegador */
+
+@font-face {
+  font-family: name-app;
+  src: url("../fonts/GreatVibes-Regular.ttf");
+}
+
+/* Presentacion */
+
+@font-face {
+  font-family: txt-info;
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+}
+
+/* Sections */
+
+@font-face {
+  font-family: section-title;
+  src: url("../fonts/GreatVibes-Regular.ttf");
+}
+
+/* Promos */
+
+@font-face {
+  font-family: common-regular;
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+}
+
+/* Productos */
+
+/* Footer */
+
+@font-face {
+  font-family: copyright;
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: name-app-footer;
+  src: url("../fonts/GreatVibes-Regular.ttf");
+}

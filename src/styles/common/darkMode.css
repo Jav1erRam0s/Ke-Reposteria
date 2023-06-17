@@ -1,0 +1,17 @@
+@import url("./colors.css");
+
+.name-app-dark{
+    color: var(--name-app-dark) !important;
+}
+
+.scroll-bar-dark{
+    scrollbar-color: var(--scroll-bar-color-dark) var(--scroll-background-dark);
+}
+
+.container-promo-title-dark{
+    color: var(--container-promo-title-dark) !important;
+}
+
+.container-promos-dark{
+    background-color: var(--container-promos-dark) !important;
+}

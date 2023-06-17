@@ -1,0 +1,47 @@
+@import url("./common/fonts.css");
+@import url("./common/colors.css");
+
+@media (min-width: 0px) and (max-width: 1024px) {
+  .card-promo-titulo {
+    font-size: 18px !important;
+  }
+}
+
+.card-promo-foto {
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.card-promo-foto img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.card:hover .card-promo-foto img {
+  transition: transform 0.5s;
+  width: 100%;
+  transform: scale(1.1);
+}
+
+.card-promo-titulo {
+  font-family: common-regular, common-regular;
+  color: var(--card-promo-titulo);
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-promo-precio {
+  font-family: common-regular, common-regular;
+  color: var(--card-promo-precio);
+  font-size: 18px;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}

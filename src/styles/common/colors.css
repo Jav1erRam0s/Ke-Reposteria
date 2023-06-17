@@ -1,0 +1,41 @@
+:root {
+  /* Navegador */
+
+  --name-app-navegador: white;
+
+  /* Presentacion */
+
+  --txt-color: #cfb173;
+
+  /* Promos */
+  --container-promo-title: #212529;
+
+  --card-promo-titulo: #212529;
+  --card-promo-precio: #957f51;
+
+  /* Productos */
+
+  /* Footer */
+
+  --name-app-footer: #957f51;
+
+  /* ****************************************** */
+  /* ************ COLORS Dark Mode ************ */
+  /* ****************************************** */
+
+  /* Navegador */
+
+  --name-app-dark: #957f51;
+
+  /* Scroll Bar */
+
+  --scroll-bar-color-dark: #957f51;
+  --scroll-background-dark: #212529;
+
+  /* Promos */
+
+  --container-promo-title-dark: white;
+  --container-promos-dark: #957f51;
+
+
+}
