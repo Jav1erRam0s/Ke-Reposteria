@@ -11,8 +11,8 @@ class Promos extends React.Component {
     super(props);
     this.state = {
       promos: [],
-      cantidadPromosxSlide: 4,
       slides: [],
+      cantidadPromosxSlide: 4,
       statusPromos: false,
     };
   }
@@ -33,16 +33,7 @@ class Promos extends React.Component {
       }
 
       this.setState({ slides: list });
-      console.log("promos", this.state.promos);
-      console.log("status", this.state.statusPromos);
-      console.log("cant promos x slides", this.state.cantidadPromosxSlide);
-      console.log("slides", this.state.slides);
     });
-
-    console.log("Fuera promos", this.state.promos);
-    console.log("Fuera status", this.state.statusPromos);
-    console.log("Fuera cant promos x slides", this.state.cantidadPromosxSlide);
-    console.log("Fuera slides", this.state.slides);
   }
 
   componentDidMount() {

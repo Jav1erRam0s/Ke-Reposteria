@@ -23,9 +23,9 @@ class Navegador extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div id="container-navegador" href="#">
+        <div id="container-navegador" href="/Ke-Reposteria/#">
           <div className="flex-container">
-            <a href="/#">
+            <a href="/Ke-Reposteria/#">
               <img src={Favicon} className="img-favicon" alt="..." />
             </a>
             <span id="name-app">Ke Reposteria</span>
