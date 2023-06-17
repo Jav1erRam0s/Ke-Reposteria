@@ -24,8 +24,10 @@ class Promos extends React.Component {
         statusPromos: true,
       });
 
+      var cantPromos = res.data.length;
+
       const cantidadDeSlides = Math.ceil(
-        this.state.promos.length / this.state.cantidadPromosxSlide
+        cantPromos / this.state.cantidadPromosxSlide
       );
       var list = [];
       for (var i = 1; i <= cantidadDeSlides; i++) {
