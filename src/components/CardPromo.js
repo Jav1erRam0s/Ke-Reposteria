@@ -18,7 +18,7 @@ class CardPromo extends React.Component {
     this.setState({ estadoModal: false });
   };
 
-  formatoPrecio(precio){
+  formatoPrecio(precio) {
     return precio.toLocaleString("de-AR");
   }
 
@@ -29,10 +29,7 @@ class CardPromo extends React.Component {
       <React.Fragment>
         <div class="card" onClick={this.showDetails}>
           <div class="card-promo-foto">
-            <img
-              src={promo.fotos[0]}
-              alt={promo.titulo}
-            />
+            <img src={promo.fotos[0]} alt={promo.titulo} />
           </div>
           <div class="card-body">
             <p class="card-text">
@@ -40,7 +37,7 @@ class CardPromo extends React.Component {
                 <b>{promo.titulo}</b>
               </h5>
               <div class="card-promo-precio mt-3 row">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                   <b>$ {this.formatoPrecio(promo.precio)}</b>
                 </div>
               </div>

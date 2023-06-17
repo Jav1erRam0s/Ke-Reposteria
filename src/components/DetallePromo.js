@@ -79,7 +79,6 @@ class DetallePromo extends React.Component {
                 </div>
               )}
             </div>
-            <br />
             <Input
               id="modal-promo-descripcion"
               type="textarea"

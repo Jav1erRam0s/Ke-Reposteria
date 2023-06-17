@@ -4,6 +4,7 @@
 .carousel-item-slide {
   height: 260px;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .carousel-item-slide img {
@@ -28,11 +29,7 @@
 
 .modal-promo-titulo {
   font-family: common-regular, common-regular;
-  background: linear-gradient(
-    90deg,
-    #cfb173 0%,
-    #957f51 100%
-  );
+  background: linear-gradient(90deg, #cfb173 0%, #957f51 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 25px;
@@ -53,4 +50,3 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
 }
-
