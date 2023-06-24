@@ -11,19 +11,50 @@
   .card-promo-foto img {
     height: 150px !important;
   }
+  .card-promo-titulo-sobre-foto {
+    display: block !important;
+  }
 
   .card-promo-titulo {
-    font-size: 17px !important;
+    display: none;
   }
 
   .card-promo-precio {
     font-size: 15px !important;
+    padding: 0 !important;
   }
 }
 
 .card-promo-foto {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
   overflow: hidden;
   border-radius: 7px;
+}
+
+.card-promo-titulo-sobre-foto {
+  display: none;
+  position: absolute;
+
+  left: 50%;
+  padding-bottom: 50px;
+
+  width: 100%;
+  transform: translate(-50%, -50%);
+
+  font-family: common-regular, common-regular;
+  color: white;
+  font-size: 17px;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(33, 37, 41, 1) 50%,
+    rgba(33, 37, 41, 1) 99%
+  );
 }
 
 .card-promo-foto img {
@@ -50,12 +81,13 @@
   color: var(--card-promo-precio);
   font-size: 18px;
   text-align: center;
+  padding-top: 15px;
 }
 
-.card {
+.card-promo {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
 }
 
-.card:hover {
+.card-promo:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }

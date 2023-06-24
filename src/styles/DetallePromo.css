@@ -38,7 +38,8 @@
 #modal-promo-descripcion {
   font-family: common-regular, common-regular;
   font-size: 16px;
-  background-color: #f4f6f7;
+  background-color: whitesmoke;
+  color: #957f51 !important;
 
   resize: none;
   color: transparent;
@@ -49,4 +50,6 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
+
+  scrollbar-color: #858585 #F0F0F0;  /* back color default */
 }

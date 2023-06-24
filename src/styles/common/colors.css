@@ -5,7 +5,7 @@
 
   /* Presentacion */
 
-  --txt-color: #cfb173;
+  --txt-color: white;
 
   /* Promos */
   --container-promo-title: #212529;
@@ -14,6 +14,7 @@
   --card-promo-precio: #957f51;
 
   /* Productos */
+  --container-producto-title: #212529;
 
   /* Footer */
 
@@ -27,6 +28,10 @@
 
   --name-app-dark: #957f51;
 
+  /* Presentacion */
+
+  --txt-color-dark: #cfb173;
+
   /* Scroll Bar */
 
   --scroll-bar-color-dark: #957f51;
@@ -35,7 +40,12 @@
   /* Promos */
 
   --container-promo-title-dark: white;
-  --container-promos-dark: #957f51;
+  --container-promos-dark: #5a4c30;
+  --card-promo-dark: #212529;
+  --card-promo-titulo-dark: white;
+  
+  /* Productos */
 
-
+  --container-producto-title-dark: white;
+  --container-producto-dark: #70603e;
 }

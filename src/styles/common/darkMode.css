@@ -8,10 +8,30 @@
     scrollbar-color: var(--scroll-bar-color-dark) var(--scroll-background-dark);
 }
 
+.presentacion-txt-dark{
+    color: var(--txt-color-dark) !important;
+}
+
 .container-promo-title-dark{
     color: var(--container-promo-title-dark) !important;
 }
 
 .container-promos-dark{
     background-color: var(--container-promos-dark) !important;
+}
+
+.card-promo-dark{
+    background-color: var(--card-promo-dark) !important;
+}
+
+.card-promo-titulo-dark{
+    color: var(--card-promo-titulo-dark) !important;
+}
+
+.container-producto-title-dark{
+    color: var(--container-producto-title-dark) !important;
+}
+
+.container-producto-dark{
+    background-color: var(--container-producto-dark) !important;
 }

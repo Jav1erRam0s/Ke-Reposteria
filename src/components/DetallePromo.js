@@ -80,6 +80,7 @@ class DetallePromo extends React.Component {
               )}
             </div>
             <Input
+              readOnly
               id="modal-promo-descripcion"
               type="textarea"
               name="text"

@@ -24,7 +24,9 @@ class Productos extends React.Component {
     return (
       <React.Fragment>
         <div id="container-productos">
-          <h6>Productos</h6>
+          <div id="container-producto-title">
+            <span>Nuestros productos</span>
+          </div>
         </div>
       </React.Fragment>
     );

@@ -19,7 +19,7 @@ class Presentacion extends React.Component {
                   <div className="foto-info">
                     <img src={Foto} alt="..." />
                   </div>
-                  <p className="txt-info">
+                  <p id="presentacion-txt-info">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean efficitur vel lorem vel facilisis. Curabitur
                     fringilla nulla est, tincidunt aliquet diam euismod nec.

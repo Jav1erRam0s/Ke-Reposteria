@@ -48,13 +48,18 @@ video {
   box-shadow: 0 0 15px #957f51;
 }
 
-.txt-info {
+#presentacion-txt-info {
   font-family: txt-info, txt-info; /*Si no carga bien la fuente importada aplica la sans-serif*/
   color: var(--txt-color);
-  text-shadow: 0 0 10px #212529;
+  /*text-shadow: 0 0 10px #212529;*/
   text-align: justify;
   margin-top: 28px;
   margin-bottom: 28px;
+
+  background: #0000008f;
+  box-shadow: 0px 0px 10px black;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .contain-info {
