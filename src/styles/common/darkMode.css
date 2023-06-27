@@ -12,6 +12,8 @@
     color: var(--txt-color-dark) !important;
 }
 
+/* Promo */
+
 .container-promo-title-dark{
     color: var(--container-promo-title-dark) !important;
 }
@@ -34,4 +36,34 @@
 
 .container-producto-dark{
     background-color: var(--container-producto-dark) !important;
+}
+
+/* Producto */
+
+.container-producto-title-dark{
+    color: var(--container-producto-title-dark) !important;
+}
+
+.container-productos-dark{
+    background-color: var(--container-productos-dark) !important;
+}
+
+.card-producto-dark{
+    background-color: var(--card-producto-dark) !important;
+}
+
+.card-producto-titulo-dark{
+    color: var(--card-producto-titulo-dark) !important;
+}
+
+.container-producto-title-dark{
+    color: var(--container-producto-title-dark) !important;
+}
+
+.container-producto-dark{
+    background-color: var(--container-producto-dark) !important;
+}
+
+.paginacion-button-dark{
+    background-color: var(--paginacion-background-dark) !important;
 }

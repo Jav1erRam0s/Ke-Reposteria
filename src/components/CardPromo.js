@@ -27,18 +27,18 @@ class CardPromo extends React.Component {
 
     return (
       <React.Fragment>
-        <div class="card card-promo" onClick={this.showDetails}>
-          <div class="card-promo-foto">
+        <div className="card card-promo" onClick={this.showDetails}>
+          <div className="card-promo-foto">
             <img src={promo.fotos[0]} alt={promo.titulo} />
-            <div class="card-promo-titulo-sobre-foto">{promo.titulo}</div>
+            <div className="card-promo-titulo-sobre-foto">{promo.titulo}</div>
           </div>
-          <div class="card-body">
-            <p class="card-text">
+          <div className="card-body">
+            <p className="card-text">
               <h5 className="card-promo-titulo">
                 <b>{promo.titulo}</b>
               </h5>
-              <div class="card-promo-precio row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+              <div className="card-promo-precio row">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <b>$ {this.formatoPrecio(promo.precio)}</b>
                 </div>
               </div>

@@ -20,7 +20,11 @@ class Promos extends React.Component {
   loadPromos() {
     axios.get(`${url.path}/promos.json`).then((res) => {
       this.setState({
-        promos: res.data,
+        promos: res.data.sort(function (a, b) {
+          if (a.precio > b.precio) return 1;
+          else if (a.precio < b.precio) return -1;
+          else return 0;
+        }),
         statusPromos: true,
       });
 
@@ -33,7 +37,7 @@ class Promos extends React.Component {
       for (var i = 1; i <= cantidadDeSlides; i++) {
         list.push(i);
       }
-
+      
       this.setState({ slides: list });
     });
   }
@@ -47,29 +51,29 @@ class Promos extends React.Component {
       <React.Fragment>
         <div id="container-promos">
           <div id="container-promo-title">
-            <span>Lleve mas, pague menos</span>
+            <span>🎀 Lleve mas, pague menos 🎉</span>
           </div>
           {/* Carousel */}
           <div id="carousel-promos">
             <div
               id="carouselExampleIndicators"
-              class="carousel slide carousel-slide"
+              className="carousel slide carousel-slide"
               data-bs-interval="false"
             >
-              <div class="carousel-inner carousel-body">
+              <div className="carousel-inner carousel-body">
                 {this.state.statusPromos === true &&
                   this.state.slides.map((idSlide, index) => {
                     let inicio = index * this.state.cantidadPromosxSlide;
                     let fin = (index + 1) * this.state.cantidadPromosxSlide - 1;
                     if (idSlide === 1) {
                       return (
-                        <div class="carousel-item active">
-                          <div class="row p-2">
+                        <div className="carousel-item active">
+                          <div className="row p-2">
                             {this.state.promos.map((element, index) => {
                               if (inicio <= index && index <= fin) {
                                 return (
-                                  <div class="col-6 col-md-6 col-lg-3 mb-4">
-                                    <CardPromo promo={element} />
+                                  <div className="col-6 col-md-6 col-lg-3 mb-4">
+                                    <CardPromo promo={element}/>
                                   </div>
                                 );
                               } else {
@@ -81,13 +85,13 @@ class Promos extends React.Component {
                       );
                     } else {
                       return (
-                        <div class="carousel-item">
-                          <div class="row p-2">
+                        <div className="carousel-item">
+                          <div className="row p-2">
                             {this.state.promos.map((element, index) => {
                               if (inicio <= index && index <= fin) {
                                 return (
-                                  <div class="col-6 col-md-6 col-lg-3 mb-4">
-                                    <CardPromo promo={element} />
+                                  <div className="col-6 col-md-6 col-lg-3 mb-4">
+                                    <CardPromo promo={element}/>
                                   </div>
                                 );
                               } else {
@@ -103,28 +107,28 @@ class Promos extends React.Component {
               {this.state.slides.length >= 2 && (
                 <div>
                   <button
-                    class="carousel-control-prev"
+                    className="carousel-control-prev"
                     type="button"
                     data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev"
                   >
                     <span
-                      class="carousel-control-prev-icon"
+                      className="carousel-control-prev-icon"
                       aria-hidden="true"
                     ></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span className="visually-hidden">Previous</span>
                   </button>
                   <button
-                    class="carousel-control-next"
+                    className="carousel-control-next"
                     type="button"
                     data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="next"
                   >
                     <span
-                      class="carousel-control-next-icon"
+                      className="carousel-control-next-icon"
                       aria-hidden="true"
                     ></span>
-                    <span class="visually-hidden">Next</span>
+                    <span className="visually-hidden">Next</span>
                   </button>
                 </div>
               )}

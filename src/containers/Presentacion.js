@@ -27,14 +27,14 @@ class Presentacion extends React.Component {
                     euismod.
                   </p>
                   <div className="seguinos-info">
-                    <a href="mailto:jimena.pintos@gmail.com" target="blank">
+                    <a href="mailto:ke.reposteria@gmail.com" target="blank">
                       <img src={GMail} alt="GMail" />
                     </a>
                     <a href="https://wa.me/5491199999999" target="blank">
                       <img src={WhatsApp} alt="WhatsApp" />
                     </a>
                     <a
-                      href="https://www.instagram.com/jimena.pintos"
+                      href="https://www.instagram.com/ke.reposteria"
                       target="blank"
                     >
                       <img src={Instagram} alt="Instagram" />

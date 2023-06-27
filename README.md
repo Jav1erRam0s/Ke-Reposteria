@@ -7,6 +7,8 @@ Este single page application, pretende calcular y presupuestar productos de repo
 - **Promos**: contiene promociones "fijas" por set, sin calculo automatico, de un conjunto de productos. Ej: Chocotorta + 6 Magdalenas de vainilla con relleno de dulce de leche.
 - **Productos**: contiene los productos individuales, sobre en el cual el precio se obtiene automaticamente. Ej: Chocotorta (calculo automatico por proporcion de materia prima) + % de ganancia = precio final.
 
+**Demo**: https://jav1erram0s.github.io/Ke-Reposteria/
+
 ## **Ejecucion**
 
 Para instalar las dependencias.

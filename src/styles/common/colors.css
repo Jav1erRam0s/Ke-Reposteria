@@ -8,13 +8,18 @@
   --txt-color: white;
 
   /* Promos */
+
   --container-promo-title: #212529;
 
   --card-promo-titulo: #212529;
   --card-promo-precio: #957f51;
 
   /* Productos */
+ 
   --container-producto-title: #212529;
+
+  --card-producto-titulo: #212529;
+  --card-producto-precio: #957f51;
 
   /* Footer */
 
@@ -48,4 +53,10 @@
 
   --container-producto-title-dark: white;
   --container-producto-dark: #70603e;
+  --card-producto-dark: #212529;
+  --card-producto-titulo-dark: whitesmoke;
+
+  /* Paginacion */
+  --paginacion-background-dark: #5a4c30;
+
 }

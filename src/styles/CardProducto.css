@@ -1,0 +1,93 @@
+@import url("./common/fonts.css");
+@import url("./common/colors.css");
+
+@media (min-width: 0px) and (max-width: 1024px) {
+  .card-producto-titulo {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .card-producto-foto img {
+    height: 150px !important;
+  }
+  .card-producto-titulo-sobre-foto {
+    display: block !important;
+  }
+
+  .card-producto-titulo {
+    display: none;
+  }
+
+  .card-producto-precio {
+    font-size: 15px !important;
+    padding: 0 !important;
+  }
+}
+
+.card-producto-foto {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.card-producto-titulo-sobre-foto {
+  display: none;
+  position: absolute;
+
+  left: 50%;
+  padding-bottom: 50px;
+
+  width: 100%;
+  transform: translate(-50%, -50%);
+
+  font-family: common-regular, common-regular;
+  color: white;
+  font-size: 17px;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(33, 37, 41, 1) 50%,
+    rgba(33, 37, 41, 1) 99%
+  );
+}
+
+.card-producto-foto img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.card:hover .card-producto-foto img {
+  transition: transform 0.5s;
+  width: 100%;
+  transform: scale(1.1);
+}
+
+.card-producto-titulo {
+  font-family: common-regular, common-regular;
+  color: var(--card-producto-titulo);
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-producto-precio {
+  font-family: common-regular, common-regular;
+  color: var(--card-producto-precio);
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.card-producto {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card-producto:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}

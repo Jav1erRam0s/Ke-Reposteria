@@ -1,7 +1,10 @@
+@import url("./common/fonts.css");
+@import url("./common/colors.css");
+
 #container-productos {
   background-color: white;
   width: 100%;
-  height: 200px;
+  /*height: 200px;*/
   padding-left: 120px;
   padding-right: 120px;
   border-top: 1px solid #21252923;
@@ -28,4 +31,29 @@
   padding-top: 20px;
   padding-bottom: 15px;
   text-align: center;
+}
+
+/* Paginacion */
+
+.nav-pagination {
+  margin-bottom: 0;
+  padding-bottom: 1.75rem !important;
+}
+
+.fuente-pagination {
+  font-family: common-regular, common-regular;
+  color: black;
+  /*font-size: 18px;*/
+}
+
+.anclaje {
+  text-decoration: none;
+}
+
+.buttonControl {
+  color: #957f51;
+}
+
+.buttonPage {
+  color: #212529;
 }

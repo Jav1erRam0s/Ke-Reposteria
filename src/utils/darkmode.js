@@ -34,4 +34,18 @@ export function darkMode() {
   const containerProductoTitle = document.getElementById("container-producto-title");
   containerProductoTitle.classList.toggle("container-producto-title-dark");
 
+  [].slice.call(document.getElementsByClassName("card-producto")).forEach(cardProducto => {
+    cardProducto.classList.toggle("card-producto-dark");
+  });
+
+  [].slice.call(document.getElementsByClassName("card-producto-titulo")).forEach(cardProductoTitulo => {
+    cardProductoTitulo.classList.toggle("card-producto-titulo-dark");
+  });
+  
+  /* Paginacion */
+
+  [].slice.call(document.getElementsByClassName("page-link")).forEach(paginationButton => {
+    paginationButton.classList.toggle("paginacion-button-dark");
+  });
+
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
 import { Input } from "reactstrap";
-import "../styles/DetallePromo.css";
+import "../styles/DetalleProducto.css";
 
-class DetallePromo extends React.Component {
+class DetalleProducto extends React.Component {
   constructor(props) {
     super(props);
     this.handleSave = this.handleSave.bind(this);
@@ -14,7 +14,7 @@ class DetallePromo extends React.Component {
   }
 
   render() {
-    const slides = this.props.promo.fotos.map((item, index) => {
+    const slides = this.props.producto.fotos.map((item, index) => {
       return (
         <div>
           {index === 0 && (
@@ -38,8 +38,8 @@ class DetallePromo extends React.Component {
             toggle={this.handleSave}
             cssModule={{ "modal-title": "w-100 text-center m-0" }}
           >
-            <span className="modal-promo-titulo">
-              <b>{this.props.promo.titulo}</b>
+            <span className="modal-producto-titulo">
+              <b>{this.props.producto.titulo}</b>
             </span>
           </ModalHeader>
           <ModalBody>
@@ -50,7 +50,7 @@ class DetallePromo extends React.Component {
             >
               <div className="carousel-inner">{slides}</div>
 
-              {this.props.promo.fotos.length >= 2 && (
+              {this.props.producto.fotos.length >= 2 && (
                 <div>
                   <button
                     className="carousel-control-prev"
@@ -81,10 +81,10 @@ class DetallePromo extends React.Component {
             </div>
             <Input
               readOnly
-              id="modal-promo-descripcion"
+              id="modal-producto-descripcion"
               type="textarea"
               name="text"
-              value={this.props.promo.descripcion}
+              value={this.props.producto.descripcion}
             />
           </ModalBody>
         </Modal>
@@ -93,4 +93,4 @@ class DetallePromo extends React.Component {
   }
 }
 
-export default DetallePromo;
+export default DetalleProducto;
