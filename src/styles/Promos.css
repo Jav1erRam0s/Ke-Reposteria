@@ -4,7 +4,6 @@
 #container-promos {
   background-color: whitesmoke;
   width: 100%;
-  /*height: 200px;*/
   padding-left: 120px;
   padding-right: 120px;
 }
@@ -13,6 +12,11 @@
   #container-promos {
     padding-left: 15px !important;
     padding-right: 15px !important;
+  }
+
+  #txt-title-promo {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
   }
 }
 
@@ -30,6 +34,21 @@
   padding-top: 20px;
   padding-bottom: 15px;
   text-align: center;
+}
+
+#txt-title-promo {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#container-promo-subtitle {
+  font-family: common-regular, common-regular;
+  color: var(--container-promo-subtitle);
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Carousel */

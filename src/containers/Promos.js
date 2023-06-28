@@ -37,7 +37,7 @@ class Promos extends React.Component {
       for (var i = 1; i <= cantidadDeSlides; i++) {
         list.push(i);
       }
-      
+
       this.setState({ slides: list });
     });
   }
@@ -51,7 +51,11 @@ class Promos extends React.Component {
       <React.Fragment>
         <div id="container-promos">
           <div id="container-promo-title">
-            <span>🎀 Lleve mas, pague menos 🎉</span>
+            🎀<span id="txt-title-promo">Lleve mas, pague menos</span>🎉
+          </div>
+          <div id="container-promo-subtitle">
+            Regalos, reconciliaciones, cumpleaños, bautismos, ... todo lo que
+            necesitas para llevar un set de productos a un menor precio.
           </div>
           {/* Carousel */}
           <div id="carousel-promos">
@@ -73,7 +77,7 @@ class Promos extends React.Component {
                               if (inicio <= index && index <= fin) {
                                 return (
                                   <div className="col-6 col-md-6 col-lg-3 mb-4">
-                                    <CardPromo promo={element}/>
+                                    <CardPromo promo={element} />
                                   </div>
                                 );
                               } else {
@@ -91,7 +95,7 @@ class Promos extends React.Component {
                               if (inicio <= index && index <= fin) {
                                 return (
                                   <div className="col-6 col-md-6 col-lg-3 mb-4">
-                                    <CardPromo promo={element}/>
+                                    <CardPromo promo={element} />
                                   </div>
                                 );
                               } else {

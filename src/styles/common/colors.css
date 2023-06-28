@@ -10,6 +10,7 @@
   /* Promos */
 
   --container-promo-title: #212529;
+  --container-promo-subtitle: #212529;
 
   --card-promo-titulo: #212529;
   --card-promo-precio: #957f51;
@@ -17,8 +18,9 @@
   /* Productos */
  
   --container-producto-title: #212529;
+  --container-producto-subtitle: #212529;
 
-  --card-producto-titulo: #212529;
+  --card-producto-titulo: #0e2c3e;
   --card-producto-precio: #957f51;
 
   /* Footer */
@@ -45,6 +47,7 @@
   /* Promos */
 
   --container-promo-title-dark: white;
+  --container-promo-subtitle-dark: white;
   --container-promos-dark: #5a4c30;
   --card-promo-dark: #212529;
   --card-promo-titulo-dark: white;
@@ -52,11 +55,14 @@
   /* Productos */
 
   --container-producto-title-dark: white;
+  --container-producto-subtitle-dark: white;
   --container-producto-dark: #70603e;
-  --card-producto-dark: #212529;
+  --card-producto-dark:  #0e2c3e;
   --card-producto-titulo-dark: whitesmoke;
 
   /* Paginacion */
   --paginacion-background-dark: #5a4c30;
+  --paginacion-color-dark: whitesmoke;
+  --paginacion-border-dark: #212529;
 
 }

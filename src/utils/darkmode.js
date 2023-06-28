@@ -18,6 +18,9 @@ export function darkMode() {
   const containerPromoTitle = document.getElementById("container-promo-title");
   containerPromoTitle.classList.toggle("container-promo-title-dark");
 
+  const containerPromoSubtitle = document.getElementById("container-promo-subtitle");
+  containerPromoSubtitle.classList.toggle("container-promo-subtitle-dark");
+
   [].slice.call(document.getElementsByClassName("card-promo")).forEach(cardPromo => {
     cardPromo.classList.toggle("card-promo-dark");
   });
@@ -34,6 +37,9 @@ export function darkMode() {
   const containerProductoTitle = document.getElementById("container-producto-title");
   containerProductoTitle.classList.toggle("container-producto-title-dark");
 
+  const containerProductoSubtitle = document.getElementById("container-producto-subtitle");
+  containerProductoSubtitle.classList.toggle("container-producto-subtitle-dark");
+
   [].slice.call(document.getElementsByClassName("card-producto")).forEach(cardProducto => {
     cardProducto.classList.toggle("card-producto-dark");
   });
@@ -46,6 +52,10 @@ export function darkMode() {
 
   [].slice.call(document.getElementsByClassName("page-link")).forEach(paginationButton => {
     paginationButton.classList.toggle("paginacion-button-dark");
+  });
+
+  [].slice.call(document.getElementsByClassName("buttonPage")).forEach(paginationButtonTxt => {
+    paginationButtonTxt.classList.toggle("paginacion-button-txt-dark");
   });
 
 }

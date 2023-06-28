@@ -27,33 +27,33 @@
 
 .card-producto-foto {
   position: relative;
-  display: inline-block;
-  text-align: center;
-
   overflow: hidden;
+  text-align: center;
   border-radius: 7px;
 }
 
 .card-producto-titulo-sobre-foto {
   display: none;
   position: absolute;
-
-  left: 50%;
-  padding-bottom: 50px;
-
   width: 100%;
-  transform: translate(-50%, -50%);
+
+  bottom: 0;
+  left: 0;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 
   font-family: common-regular, common-regular;
-  color: white;
   font-size: 17px;
+  color: white;
 
-  background: rgb(0, 0, 0);
+  background: rgb(14, 44, 62);
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(33, 37, 41, 1) 50%,
-    rgba(33, 37, 41, 1) 99%
+    0deg,
+    rgba(14, 44, 62, 1) 0%,
+    rgba(14, 44, 62, 0) 100%
   );
 }
 

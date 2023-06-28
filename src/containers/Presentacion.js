@@ -1,5 +1,5 @@
 import React from "react";
-import Foto from "../images/Presentacion/jpfoto.jpg";
+import Foto from "../images/Presentacion/chef.png";
 import "../styles/Presentacion.css";
 import presentacion from "../videos/presentacion.mp4";
 import GMail from "../images/Presentacion/gmail.png";
@@ -20,11 +20,11 @@ class Presentacion extends React.Component {
                     <img src={Foto} alt="..." />
                   </div>
                   <p id="presentacion-txt-info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean efficitur vel lorem vel facilisis. Curabitur
-                    fringilla nulla est, tincidunt aliquet diam euismod nec.
-                    Aliquam mollis ante vel nisi elementum, et euismod purus
-                    euismod.
+                    <p>En Ke Repostería consideramos cada producto como arte que 
+                    entregamos a nuestros compradores y amigos que confían en 
+                    nosotros.</p>
+                    <p>Escríbinos o contactanos de forma directa, y visita nuestro
+                    instagram para ver nuestro trabajo.</p>
                   </p>
                   <div className="seguinos-info">
                     <a href="mailto:ke.reposteria@gmail.com" target="blank">
@@ -34,7 +34,7 @@ class Presentacion extends React.Component {
                       <img src={WhatsApp} alt="WhatsApp" />
                     </a>
                     <a
-                      href="https://www.instagram.com/ke.reposteria"
+                      href="https://www.instagram.com/Ke.Reposteria"
                       target="blank"
                     >
                       <img src={Instagram} alt="Instagram" />

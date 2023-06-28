@@ -21,7 +21,7 @@ class Productos extends React.Component {
   }
 
   loadProductos() {
-    axios.get(`${url.test}/productos.json`).then((res) => {
+    axios.get(`${url.path}/productos.json`).then((res) => {
       var response = res.data.sort(function (a, b) {
         if (a.ganancia > b.ganancia) return 1;
         else if (a.ganancia < b.ganancia) return -1;
@@ -50,7 +50,7 @@ class Productos extends React.Component {
   }
 
   loadMateriasPrimas() {
-    axios.get(`${url.test}/materias_primas.json`).then((res) => {
+    axios.get(`${url.path}/materias_primas.json`).then((res) => {
       this.setState({
         materias_primas: res.data,
       });
@@ -102,8 +102,10 @@ class Productos extends React.Component {
     //Sumamos el costo de produccion
     for (const key in ingredientes_producto) {
       const ingrediente = ingredientes_producto[key];
-      var element_mp = arr_mp.find(item => item.nombre === ingrediente.nombre);
-      if( element_mp !== undefined ){
+      var element_mp = arr_mp.find(
+        (item) => item.nombre === ingrediente.nombre
+      );
+      if (element_mp !== undefined) {
         const ingr_cant = ingrediente.cantidad;
         const ingr_mp_cant = element_mp.cantidad;
         const ingr_mp_precio = element_mp.precio;
@@ -112,11 +114,13 @@ class Productos extends React.Component {
       }
     }
     //Sumamos gastos extra
-    if ( producto.extra !== undefined ){
+    if (producto.extra !== undefined) {
       total = total + Object.values(producto.extra).reduce((a, b) => a + b);
     }
     //Sumamos la ganancia
     total = total + producto.ganancia;
+    //Redondeamos el total
+    total = Math.round(total / 10) * 10;
 
     return total;
   }
@@ -124,12 +128,15 @@ class Productos extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <a name="irArriba" href="up">
-          {""}
-        </a>
         <div id="container-productos">
           <div id="container-producto-title">
-            <span>🍰 Nuestros productos 🥐</span>
+            🍰<span id="txt-title-producto">Nuestros productos</span>🥐
+          </div>
+          <a name="up" href="up-producto">
+            {""}
+          </a>
+          <div id="container-producto-subtitle">
+            Ordene el producto y a las unidades a nuestro chef repostero.
           </div>
           {/* Lista de productos */}
           <div className="row p-2">
@@ -152,7 +159,7 @@ class Productos extends React.Component {
                 <nav aria-label="Page navigation example">
                   <ul className="barra nav-pagination pagination justify-content-center fuente-pagination">
                     <li className="page-item">
-                      <a href="#irArriba" className="anclaje">
+                      <a href="#up" className="anclaje">
                         <button
                           className="page-link"
                           style={{ background: "whitesmoke" }}
@@ -170,7 +177,7 @@ class Productos extends React.Component {
                       this.state.paginacion.map((element, index) => {
                         return (
                           <li className="page-item">
-                            <a href="#irArriba" className="anclaje">
+                            <a href="#up" className="anclaje">
                               <button
                                 className="page-link"
                                 style={{ background: "whitesmoke" }}
@@ -184,7 +191,7 @@ class Productos extends React.Component {
                       })}
 
                     <li className="page-item">
-                      <a href="#irArriba" className="anclaje">
+                      <a href="#up" className="anclaje">
                         <button
                           className="page-link"
                           style={{ background: "whitesmoke" }}
