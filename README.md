@@ -43,11 +43,7 @@ Por regla de tres, sabemos que el costo de cada ingrediente exacto es el siguien
 | Azucar              | (250 gr x $ 350) / 1000 gr | $ 87.50       |
 | Esencia de vainilla | (5 ml x $ 260) / 150 ml    | $ 8.66        |
 
-```txt
-Finalmente tenemos que el costo del producto es la suma de los precios exactos, $461.82, el cual sumado
-la ganancia (Por ej. $1.200), da como precio final $1.661.82, pero como nuestro sistema redondea decimales,
-tenemos que el precio final a pagar por el producto es $1.660.
-```
+Finalmente tenemos que el costo del producto es la suma de los precios exactos, $461.82, el cual sumado la ganancia (Por ej. $1.200), da como precio final $1.661.82, pero como nuestro sistema redondea decimales, tenemos que el precio final a pagar por el producto es $1.660.
 
 ## **Ejecucion**
 
