@@ -4,11 +4,11 @@ Ke Reposteria es una SPA (single page application) que calcula y presupuesta pro
 
 ## **Partes del sistema**
 
-- **Promos**: contiene promociones _fijas_ por set de productos, sin calculo automatico. Ej: Chocotorta + 6 Magdalenas de vainilla con relleno de dulce de leche.
+- **Promos**: contiene promociones con **precio fijo** por set de productos, sin calculo automatico. Ej: Chocotorta + 6 Magdalenas de vainilla con relleno de dulce de leche.
 
 ![Promos](/doc/img/promos.png "Seccion Promos")
 
-- **Productos**: contiene productos individuales, cuyo precio se obtiene de manera automatica. Ej: Chocotorta (calculo automatico por proporcion de materia prima) + ganancia = precio final.
+- **Productos**: contiene productos individuales, cuyo **precio** se obtiene de manera automatica. Ej: Chocotorta (**calculo automatico** por proporcion de materia prima) + ganancia = precio final.
 
 ![Prductos](/doc/img/productos.png "Seccion Productos")
 
@@ -44,7 +44,9 @@ Por regla de tres, sabemos que el costo de cada ingrediente exacto es el siguien
 | Esencia de vainilla | (5 ml x $ 260) / 150 ml    | $ 8.66        |
 
 ```txt
-Finalmente tenemos que el costo del producto es la suma de los precios exactos, $461.82, el cual sumado la ganancia (Por ej. $1.200), da como precio final $1.661.82, pero como nuestro sistema redondea decimales, tenemos que el precio final a pagar por el producto es $1.660.
+Finalmente tenemos que el costo del producto es la suma de los precios exactos, $461.82, el cual sumado
+la ganancia (Por ej. $1.200), da como precio final $1.661.82, pero como nuestro sistema redondea decimales,
+tenemos que el precio final a pagar por el producto es $1.660.
 ```
 
 ## **Ejecucion**
@@ -95,4 +97,4 @@ https://jav1erram0s.github.io/Ke-Reposteria/
 
 ---
 
-#### **✏️ Sabemos que un verdadero maestro repostero es alquimista por excelencia, y dado la necesitad de fusionar ambos rubros, me vi obligado a crear esta simple pero interesante herramienta, el cual dejo abierto al publico repostero independiente. ✏️**
+**✏️ Sabemos que un verdadero maestro repostero es alquimista por excelencia, y dado la necesitad de fusionar ambos rubros, me vi obligado a crear esta simple pero interesante herramienta, el cual dejo abierto al publico repostero independiente. ✏️**
