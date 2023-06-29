@@ -51,10 +51,10 @@ class Promos extends React.Component {
       <React.Fragment>
         <div id="container-promos">
           <div id="container-promo-title">
-            🎀<span id="txt-title-promo">Lleve mas, pague menos</span>🎉
+            🎀<span id="txt-title-promo">Promociones</span>🎉
           </div>
           <div id="container-promo-subtitle">
-            Regalos, reconciliaciones, cumpleaños, bautismos, ... todo lo que
+            Regalos, reconciliaciones, san valentin, cumpleaños, bautismos, ... todo lo que
             necesitas para llevar un set de productos a un menor precio.
           </div>
           {/* Carousel */}
