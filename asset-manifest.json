@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Ke-Reposteria/static/css/main.c4818146.css",
+    "main.css": "/Ke-Reposteria/static/css/main.691d35d3.css",
     "main.js": "/Ke-Reposteria/static/js/main.f7ff29ea.js",
     "static/media/presentacion.mp4": "/Ke-Reposteria/static/media/presentacion.d144bfb78771460402db.mp4",
     "static/media/chef.png": "/Ke-Reposteria/static/media/chef.dd75ead486d0897f1dfc.png",
@@ -10,11 +10,11 @@
     "static/media/instagram.png": "/Ke-Reposteria/static/media/instagram.f5ef3733532877aa232f.png",
     "static/media/whatsapp.png": "/Ke-Reposteria/static/media/whatsapp.43a4918296128915afbb.png",
     "index.html": "/Ke-Reposteria/index.html",
-    "main.c4818146.css.map": "/Ke-Reposteria/static/css/main.c4818146.css.map",
+    "main.691d35d3.css.map": "/Ke-Reposteria/static/css/main.691d35d3.css.map",
     "main.f7ff29ea.js.map": "/Ke-Reposteria/static/js/main.f7ff29ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4818146.css",
+    "static/css/main.691d35d3.css",
     "static/js/main.f7ff29ea.js"
   ]
 }
