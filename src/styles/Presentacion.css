@@ -15,12 +15,12 @@
   }
 
   .foto-info Img {
-    width: 150px !important;
-    height: 150px !important;
+    width: 160px !important;
+    height: 160px !important;
   }
   
   #presentacion-txt-info {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 

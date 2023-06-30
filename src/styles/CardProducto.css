@@ -85,9 +85,9 @@
 }
 
 .card-producto {
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 4px rgba(14, 44, 62, 0.4);
 }
 
 .card-producto:hover {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px rgba(14, 44, 62, 0.7);
 }

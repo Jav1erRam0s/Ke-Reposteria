@@ -30,7 +30,10 @@
 .modal-producto-titulo {
   font-family: common-regular, common-regular;
   background: linear-gradient(90deg, #cfb173 0%, #957f51 100%);
+  /* for Chrome */
   -webkit-background-clip: text;
+  /* for Firefox */
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 25px;
 }

@@ -8,7 +8,7 @@
 }
 
 #copyright {
-  font-family: copyright, copyright; /*Si no carga bien la fuente importada aplica la sans-serif*/
+  font-family: copyright, copyright;
   color: white;
   font-size: 18px;
   margin-top: 0;
@@ -32,10 +32,8 @@
 
 #name-app-footer {
   font-family: name-app-footer, name-app-footer;
-  background: var(--name-app-footer);
+  color: var(--name-app-footer);
   font-size: 20px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .simbol-c {
